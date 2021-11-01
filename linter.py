@@ -25,7 +25,7 @@ class Bashate(Linter):
         '--error=,': ''
     }
     regex = (
-        r'^.+:(?P<line>\d+):1: (?:(?P<error>E)|(?P<warning>W))\d{3} (?P<message>.+)'
+        r'^.+:(?P<line>\d+):1: (?:(?P<error>E)|(?P<warning>W))(?P<code>\d{3}) (?P<message>.+)'
     )
     tempfile_suffix = 'sh'
 
